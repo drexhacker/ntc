@@ -121,6 +121,7 @@ export async function processTransfer(
           },
         };
       } else {
+        console.log(flutterwaveResponse);
         // Transfer failed
         await databases.updateDocument(
           DATABASE_ID,
